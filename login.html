@@ -2,49 +2,85 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LH Games - login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Mania</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 
+
+    
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100px" height="100ox" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  <header class="container">
+    <nav class="navbar navbar-expand-lg   navbar-dark bg-dark bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100px" height="100ox" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">REGULAMENTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>SAC</span><BR><span class="fonte-pequena">Atendimento ao cliente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACESSIBILIDADE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">  BEM-VINDO :&rpar;
+                <p class="fonte-pequena"> Entre ou Cadastre-se</p></a>
+            </li>
+            <li class="nav-item">
+              <button class="btn-info">
+                <div class="flex-container">
+                  <div class="flex-item">
+                    <img src="img/02_carrinhoBranco.png"> 
+                  </div>
+                  <div class="flex-item">
+                    <span>CARRINHO</span> <br>
+                    <span class="fonte-pequena">de compras</span>
+                  </div>
+                </div>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Promoções</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Console</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Jogos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
-      
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="O que deseja buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>         
-    </header>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button id="btn-deptos">
+        <div class="flex-container">
+          <div class="flex-item">
+            <p class="hamburger">&#9776;</p>
+          </div>
+          <div class="flex-item">
+            <span>ACESSE</span><br>
+            <p class="fonte-pequena">todos os departamentos</p>
+          </div>
+        </div>
+      </button>
+
+      <form class="d-flex w-100" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que deseja buscar" aria-label="Search">
+              <button class="btn btn-outline-success" id="tbn-buscar" type="submit">Buscar</button>
+            </form>
+ 
+    </nav>
+  </header>
 
     <main>
+      
         <section id="section-login">
             <h1>Login</h1>
             <div class="d-flex justify-content-center">
@@ -65,7 +101,7 @@
                 </form>
             </div>
             <div id="botao-cadastrar">
-                <button type="button" class="btn btn-info">Não é cadastrado ainda? Cadastre-se</button>
+                <button type="button" class="btn btn-link">Não é cadastrado ainda?? Cadastre-se</button>                
             </div>
         </section>
 
@@ -103,10 +139,88 @@
     </main>
 
 
+  <footer>
 
-    <footer>
-        <p></p>
-    </footer>
+    <section class="foot-info ">
+      <h5>Formas de Pagamento</h5>
+      <div class="row justify-content-center" id="foot-pgto">
+        <div class="col" id="col-pgto">
+          <img src="img/09_visa.png" alt="visa">
+        </div>
+        <div class="col" id="col-pgto">
+          <img src="img/10_mastercard.png" alt="mastercard">
+        </div>
+        <div class="col" id="col-pgto">
+          <img src="img/11_american.png" alt="americam express">
+        </div>
+        <div class="col" id="col-pgto">
+          <img src="img/12_boleto.png" alt="visa">
+        </div>     
+        <div class="col" id="col-pgto">
+          <img src="img/13pix.png" alt="visa">
+        </div>     
+       </div>
+
+       <!--para poder escrever somente dentro do container-->
+      <div class="container" id="info">
+        <!--para as coisas dentro do container ficarem centralizdas-->
+        <div class="row justify-content-center" >
+          <!--criando as colunas-->
+          <div class="col" id="col-info" >
+            <span class="col-tit">institucional</span><br>
+              quem somoes<br>
+              nossas lojas<br>
+              nosso blog<br>
+              trabalhe conosco<br>
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">dúvidas</span><br>
+              meus pedidos<br>
+              trocas e devoluções<br>
+              assitência técnica do fabricante<br>
+              política de privacidade<br>
+              formas de pagamento<br>
+              sobre boletos<br>
+              <p>
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">central de atendimento</span><br>
+              SAC<br>
+              fale conosco<br>
+              trocas e devoluções<br>
+              assistência técnica<br>
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">certificado de segurança</span><br>
+            <img src="img/14_siteblindado.png" class="seguranca">  
+            <img src="img/15_certificadogoogle.png" class="seguranca">  
+            <img src="img/16_Selo-e-bit-1.jpg" class="seguranca2">
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">siga-nos nas redes sociais</span><br>
+            <img src="img/17_insta.png" class="redes-sociais">
+            <img src="img/18_twitter.png" class="redes-sociais">
+            <img src="img/19-face.png" class="redes-sociais">
+            <img src="img/20_linkedin.png" class="redes-sociais">    
+          </div>
+        </div>
+        </div>
+
+
+
+
+       </section>
+    <section class="foot-fim">
+      Game Mania Ltda - CNPJ 11.2222.2222/0001-2 <br>
+      Rua: asdfadfadf, 432 - CEP 33.3333-333 - Cidade Assss - AA - Brasil<br>
+      Site produzido por DDDD - todos os direitos 
+
+    </p>
+
+
+  </footer>
+   
+    
 
     <button id="voltar-topo" type="button" class="btn btn-outline-primary">&uarr; Voltar ao topo</button>
 

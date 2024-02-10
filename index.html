@@ -5,63 +5,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LH Games</title>
+  <title>Game Mania</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/estilo.css">
 
-
-
 </head>
 
+
+    
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <header class="container">
+    <nav class="navbar navbar-expand-lg   navbar-dark bg-dark bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100px" height="100ox" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+              <a class="nav-link" aria-current="page" href="#">REGULAMENTO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Console</a>
+              <a class="nav-link" href="#"><span>SAC</span><BR><span class="fonte-pequena">Atendimento ao cliente</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jogos</a>
+              <a class="nav-link" href="#">ACESSIBILIDADE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
+              <a class="nav-link" href="login.html">  BEM-VINDO :&rpar;
+                <p class="fonte-pequena"> Entre ou Cadastre-se</p></a>
             </li>
+            <li class="nav-item">
+              <button class="btn-info">
+                <div class="flex-container">
+                  <div class="flex-item">
+                    <img src="img/02_carrinhoBranco.png"> 
+                  </div>
+                  <div class="flex-item">
+                    <span>CARRINHO</span> <br>
+                    <span class="fonte-pequena">de compras</span>
+                  </div>
+                </div>
+              </button>
 
+            </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="O que deseja buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
         </div>
       </div>
     </nav>  
-  </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button id="btn-deptos">
+        <div class="flex-container">
+          <div class="flex-item">
+            <p class="hamburger">&#9776;</p>
+          </div>
+          <div class="flex-item">
+            <span>ACESSE</span><br>
+            <p class="fonte-pequena">todos os departamentos</p>
+          </div>
+        </div>
+      </button>
 
+      <form class="d-flex w-100" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que deseja buscar" aria-label="Search">
+              <button class="btn btn-outline-success" id="tbn-buscar" type="submit">Buscar</button>
+            </form>
+ 
+    </nav>
+  </header>
+  <br>
   <main>
 
-    <section id="section-banners" class="container">
+    <section id="section-banners" >
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/banner1.PNG" class="d-block w-100" alt="Venha comprar na nossa loja">
+            <img src="img/03_Banner.jpg" class="d-block w-100" alt="Venha comprar na nossa loja">
           </div>
           <div class="carousel-item">
-            <img src="img/banner2.PNG" class="d-block w-100" alt="Promoção de produtos">
+            <img src="img/03_Banner.jpg" class="d-block w-100" alt="Promoção de produtos">
           </div>
           <div class="carousel-item">
-            <img src="img/banner3.PNG" class="d-block w-100" alt="Várias novidades de produtos">
+            <img src="img/03_Banner.jpg" class="d-block w-100" alt="Várias novidades de produtos">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -74,55 +104,355 @@
         </button>
       </div>
     </section>
+    <br>
 
 
-    
-    <section id="section-vendidos" class="container">
-      <h2>OS MAIS VENDIDOS</h2>
-        <div class = card-group>
-          <div class="card" ">
-            <img src="img/jogo1.png" class="card-img-top" alt="Jogo de Aventura">
-            <div class="card-body">
-              <h5 class="card-title">Jogo 1</h5>
-              <p class="card-text">Jogo do ano</p>
-              <p class="preco">R$ 199,99</p>
-
-              <a href="#" class="btn btn-primary">Comprar</a>
+    <!-- criando a parte do menu de botões   -->
+    <section id="menu2" class="container">
+      <div class="row row-cols-2">
+        <div class="col" id="coluna-menu">
+          <button id="btn-game" type="button" class="btn-menu2" >
+            <div class="flex-container">
+              <div  id="btn-esq-menu2">
+                <img id="img-menu2" src="img/04_games.png">
+              </div>
+              <div id="btn-dir-menu2">
+                GAMES <BR>
+                <p class="fonte-pequena">jogos para todos os gostos</p>
+              </div>
             </div>
-          </div>
-          
-          <div class="card">
-            <img src="img/jogo2.png" class="card-img-top" alt="Jogo de Corrida">
-            <div class="card-body">
-              <h5 class="card-title">Jogo 2</h5>
-              <p class="card-text">Jogo Top de Linha</p>
-              <p class="preco">R$ 299,99</p>
-
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-      
-          <div class="card">
-            <img src="img/jogo3.png" class="card-img-top" alt="Melhor de todos">
-            <div class="card-body">
-              <h5 class="card-title">Jogo 3</h5>
-              <p class="card-text">Melhor de todos</p>
-              <p class="preco">R$ 159,99</p>
-
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>  
+          </button> 
         </div>
+        <div class="col">
+          <button id="btn-pc" type="button" class="btn-menu2" >
+            <div class="flex-container">
+              <div  id="btn-esq-menu2">
+                <img id="img-menu2" src="img/05_pc.png">
+              </div>
+              <div id="btn-dir-menu2">
+                PC GAMER <BR>
+                <p class="fonte-pequena">perfeto para quem ama jogos</p>
+              </div>
+            </div>
+          </button> 
+        </div>
+        <div class="col">
+          <button id="btn-acessorios" type="button" class="btn-menu2" >
+            <div class="flex-container">
+              <div  id="btn-esq-menu2">
+                <img id="img-menu2" src="img/06_volante.png">
+              </div>
+              <div id="btn-dir-menu2">
+                ACESSÓRIOS <BR>
+                <p class="fonte-pequena">tudo o que você precisa para deixar seus jogos mais emocionantes</p>
+              </div>
+            </div>
+          </button> 
+        </div>
+        <div class="col"> 
+          <button id="btn-personalize" type="button" class="btn-menu2">
+            <div class="flex-container">
+              <div  id="btn-esq-menu2">
+                <img id="img-menu2" src="img/07_personalize.png">
+              </div>
+              <div id="btn-dir-menu2">
+                PERSONALIZE <BR>
+                <p class="fonte-pequena">personalize o PC do seu jeito</p>
+              </div>
+            </div>
+          </button> 
+        </div>
+      </div>
+    </section>
+    <p>
+   
+
+    <!------------------------------------------------------------>
+    <!--SEÇÃO lançamentos                                       -->
+    <!------------------------------------------------------------>  
+    <section id="section-lancamentos" class="container">
+      <h2>LANÇAMENTOS</h2>
+      <div class = card-group>
+        <div class="card">
+          <img src="img/08_computador.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Computador Completo 24" Intel Core i7 16GB SSD 512GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 2999,90</span><br>
+            <span class="preco-prazo"> ou em até 10x de 299,99</span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="img/08_joystick.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Controle Compatível Xbox 360 Pc Com Fio Joystick<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 189,90</span><br>
+            <span class="preco-prazo"> ou 200,00 em até 2x de 100,00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_headset.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Fone de Ouvido Headset Gamer c/ Microfone e Led EPH710 - USB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 199,99</span><br>
+            <span class="preco-prazo"> ou em até 2x de 99,99</span>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_notebook.PNG" class="card-img-top" alt="notebook">
+          <div class="card-body">
+            <p class="card-text"> Notebook Gamer Dell G15 AMD Ryzen 5 8GB - 256GB SSD 15,6” Full HD NVIDIA RTX 3050 4GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 4850,00</span><br>
+            <span class="preco-prazo"> ou em até 10x de 485,00</span>
+            </p>
+          </div>
+        </div>
+      </div>
       </section>
+
+
+
+
+
+    <!------------------------------------------------------------>
+    <!--SEÇÃO Ofertas                                           -->
+    <!------------------------------------------------------------>  
+    <section id="section-lancamentos" class="container">
+      <h2>AS MELHORES OFERTAS</h2>
+      <div class = card-group>
+        <div class="card">
+          <img src="img/08_computador.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Computador Completo 24" Intel Core i7 16GB SSD 512GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 2999,90</span><br>
+            <span class="preco-prazo"> ou em até 10x de 299,99</span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="img/08_joystick.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Controle Compatível Xbox 360 Pc Com Fio Joystick<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 189,90</span><br>
+            <span class="preco-prazo"> ou 200,00 em até 2x de 100,00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_headset.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Fone de Ouvido Headset Gamer c/ Microfone e Led EPH710 - USB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 199,99</span><br>
+            <span class="preco-prazo"> ou em até 2x de 99,99</span>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_notebook.PNG" class="card-img-top" alt="notebook">
+          <div class="card-body">
+            <p class="card-text"> Notebook Gamer Dell G15 AMD Ryzen 5 8GB - 256GB SSD 15,6” Full HD NVIDIA RTX 3050 4GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 4850,00</span><br>
+            <span class="preco-prazo"> ou em até 10x de 485,00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class = card-group>
+        <div class="card">
+          <img src="img/08_computador.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Computador Completo 24" Intel Core i7 16GB SSD 512GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 2999,90</span><br>
+            <span class="preco-prazo"> ou em até 10x de 299,99</span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="img/08_joystick.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Controle Compatível Xbox 360 Pc Com Fio Joystick<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 189,90</span><br>
+            <span class="preco-prazo"> ou 200,00 em até 2x de 100,00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_headset.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Fone de Ouvido Headset Gamer c/ Microfone e Led EPH710 - USB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 199,99</span><br>
+            <span class="preco-prazo"> ou em até 2x de 99,99</span>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_notebook.PNG" class="card-img-top" alt="notebook">
+          <div class="card-body">
+            <p class="card-text"> Notebook Gamer Dell G15 AMD Ryzen 5 8GB - 256GB SSD 15,6” Full HD NVIDIA RTX 3050 4GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 4850,00</span><br>
+            <span class="preco-prazo"> ou em até 10x de 485,00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class = card-group>
+        <div class="card">
+          <img src="img/08_computador.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Computador Completo 24" Intel Core i7 16GB SSD 512GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 2999,90</span><br>
+            <span class="preco-prazo"> ou em até 10x de 299,99</span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="img/08_joystick.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Controle Compatível Xbox 360 Pc Com Fio Joystick<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 189,90</span><br>
+            <span class="preco-prazo"> ou 200,00 em até 2x de 100,00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_headset.PNG" class="card-img-top" alt="Computador">
+          <div class="card-body">
+            <p class="card-text"> Fone de Ouvido Headset Gamer c/ Microfone e Led EPH710 - USB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 199,99</span><br>
+            <span class="preco-prazo"> ou em até 2x de 99,99</span>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/08_notebook.PNG" class="card-img-top" alt="notebook">
+          <div class="card-body">
+            <p class="card-text"> Notebook Gamer Dell G15 AMD Ryzen 5 8GB - 256GB SSD 15,6” Full HD NVIDIA RTX 3050 4GB<br>
+            <span class="texto-preco">à vista</span><br>
+            <span class="preco">R$ 4850,00</span><br>
+            <span class="preco-prazo"> ou em até 10x de 485,00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
   </main>
 
   <footer>
-    <p>
-      Produzido por Edna Yoshiko Senzako <br>
-      Curso de Front-End
+
+    <section class="foot-info ">
+      <h5>Formas de Pagamento</h5>
+      <div class="row justify-content-center" id="foot-pgto">
+        <div class="col" id="col-pgto">
+          <img src="img/09_visa.png" alt="visa">
+        </div>
+        <div class="col" id="col-pgto">
+          <img src="img/10_mastercard.png" alt="mastercard">
+        </div>
+        <div class="col" id="col-pgto">
+          <img src="img/11_american.png" alt="americam express">
+        </div>
+        <div class="col" id="col-pgto">
+          <img src="img/12_boleto.png" alt="visa">
+        </div>     
+        <div class="col" id="col-pgto">
+          <img src="img/13pix.png" alt="visa">
+        </div>     
+       </div>
+
+       <!--para poder escrever somente dentro do container-->
+      <div class="container" id="info">
+        <!--para as coisas dentro do container ficarem centralizdas-->
+        <div class="row justify-content-center" >
+          <!--criando as colunas-->
+          <div class="col" id="col-info" >
+            <span class="col-tit">institucional</span><br>
+              quem somoes<br>
+              nossas lojas<br>
+              nosso blog<br>
+              trabalhe conosco<br>
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">dúvidas</span><br>
+              meus pedidos<br>
+              trocas e devoluções<br>
+              assitência técnica do fabricante<br>
+              política de privacidade<br>
+              formas de pagamento<br>
+              sobre boletos<br>
+              <p>
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">central de atendimento</span><br>
+              SAC<br>
+              fale conosco<br>
+              trocas e devoluções<br>
+              assistência técnica<br>
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">certificado de segurança</span><br>
+            <img src="img/14_siteblindado.png" class="seguranca">  
+            <img src="img/15_certificadogoogle.png" class="seguranca">  
+            <img src="img/16_Selo-e-bit-1.jpg" class="seguranca2">
+          </div>
+          <div class="col" id="col-info" >
+            <span class="col-tit">siga-nos nas redes sociais</span><br>
+            <img src="img/17_insta.png" class="redes-sociais">
+            <img src="img/18_twitter.png" class="redes-sociais">
+            <img src="img/19-face.png" class="redes-sociais">
+            <img src="img/20_linkedin.png" class="redes-sociais">    
+          </div>
+        </div>
+        </div>
+
+
+
+
+       </section>
+    <section class="foot-fim">
+      Game Mania Ltda - CNPJ 11.2222.2222/0001-2 <br>
+      Rua: asdfadfadf, 432 - CEP 33.3333-333 - Cidade Assss - AA - Brasil<br>
+      Site produzido por DDDD - todos os direitos 
+
     </p>
+
+
   </footer>
 
   <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>

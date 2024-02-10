@@ -1,8 +1,128 @@
+body {
+    background-color: rgba(30,30,30,1);
+    color: #fff;
+
+}
 /*cabeçalho*/
+
+.navbar-toggler-icon {
+    color: #c0c0c0; /* Altere para a cor desejada */
+}
+
+.container-fluid{
+    align-items: center;
+}
+
+.nav-item a{
+    color: #c0c0c0;
+    margin-right: 3em;
+    
+}
+.nav-link:active{
+    color: #009e2a;
+}
+
+.nav-item{
+    font-weight: bold;
+    line-height: 1;
+
+}
+.nav-link:hover{
+    color: #c0c0c0
+}
+
+.flex-container{
+    display: flex;
+    align-items:center;
+    padding: 0px;
+}
+
+.flex-item{
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+.navbar-collapse{
+    text-align: right;
+}
+
+.btn-info:hover{
+    background-color: #009e2a;
+}
+.btn-info img{
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-info p{
+    font-size: 12px;
+    padding: 0;
+}
+
+.btn-info {
+    display: inline-flex;
+    padding: 0px 5px;
+    line-height: 1;
+    background-color: #009e2a;
+    border-color:#009e2a;
+    margin: 0;
+    padding: 2;
+    border-radius: 10px;
+
+}
+
+
+.fonte-pequena{
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1;
+
+}
+
 header img{
     height: 70px;
     width: 70px;
 }
+
+#btn-deptos{
+    background-color: #d70808;
+    border-color: #d70808;
+    color: #fff;
+    border-radius: 10px;
+    line-height: 1;
+    display: inline-block;
+    min-width: 200px; /* ajuste conforme necessário */
+    text-align: left;
+    height: 40px;
+
+    align-items: center;
+}
+
+.hamburger{
+    text-align: center;
+    font-size: 30px;
+    padding-right:  10px;
+}
+
+
+.btn-outline-success{
+    background-color: #808080;
+    border-color: #808080;
+    color: #fff;
+}
+
+
+.btn-outline-success:hover{
+    background-color: #808080;
+    border-color: #808080;
+    color: #fff;
+}
+
+
+
 
 /*Conteudo principal*/
 main{
@@ -14,49 +134,191 @@ main{
     width: 18rem;
 }
 
+#img-menu2{
+    width: auto;
+    height: 50px;
+}
+
+
+/*Botao de compra de games*/
+.btn-menu2 {
+    background-color: #009e2a;
+    border-color: #009e2a;
+    color: #fff;
+    width: 100%;
+    height: 90%;
+    align-items: top;
+}
+
+#btn-esq-menu2{
+    width: 40%;
+    align-items: center;
+    justify-content: center; 
+    display:flex
+}
+
+#btn-dir-menu2{
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#btn-game{
+    background-color: #009e2a;
+    border-color: #009e2a;   
+}
+
+
+#btn-pc{
+    background-color: #d70808;
+    border-color: #d70808;   
+}
+
+#btn-acessorios{
+    background-color:#0088f8;
+    border-color: #0088f8;   
+
+}
+
+#btn-personalize{
+    background-color: #080108;       
+    border-color: #080108;       
+}
+
 
 /*banner*/
 #section-banners img{
-    height: 500px;
+    max-height: 400px;
+    width: auto;
 }
+
+
 
 /*Produtos vendidos*/
-#section-vendidos{
-    text-align: center;
+#section-lancamentos{
+    padding-top: 40px;
 }
 
-#section-vendidos h2{
+#section-lancamentos h2{
     font-weight: bold;
-    padding: 20px;
+    text-align: left;
 }
 
-#section-vendidos img{
-    height: 300px;
-    border-radius: 10px;
+#section-lancamentos img{
+    max-height: 300px;
+    max-width: 300px;
 }
 
 
-#section-vendidos .card{
+#section-lancamentos .card{
     margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 0px;
+    background-color: rgba(30,30,30,1);
+    line-height: 1;
+
+
 }
 
-#section-vendidos .preco{
-    color: red;
-    font-size: 18px;
-    font-weight: bold;
+#section-lancamentos .card-text{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+
 }
+
+#section-lancamentos .texto-preco{
+    color: #009e2a;
+    font-size: 12px;
+    line-height: 1;
+
+}
+
+
+
+#section-lancamentos .preco{
+    color: #009e2a;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+
+}
+
+#section-lancamentos .preco-prazo{
+    color: #c0c0c0;
+    font-size: 11px;
+    line-height: 1;
+
+}
+
 
 /*Rodapé*/
+
+.foot-info{
+    background-color: #080108;
+}
+
 footer{
     text-align: center;
+    padding-top: 20px;
+    
 }
 
-footer p{
-    padding: 10px;
+
+footer h5{
+    padding-top: 20px;
+}
+footer #foot-info{
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
+footer #col-pgto{
+    max-width: 80px;
+}
+
+footer img{
+    max-width: 60px;
+}
+
+footer #col-pgto{
+    font-size: 10px;
+}
+
+footer #info{
+    padding-top: 20px;
+    font-size: 11px;
+    text-align: left;
+    color:#a0a0a0
+}
+
+footer span.col-tit{
+    color: #c0c0c0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+footer .seguranca{
+    max-width:80px;
+}
+
+footer .seguranca2{
+    max-width:40px;
+}
+
+footer .redes-sociais{
+    max-width: 40px;
+}
+
+footer .foot-fim{
+    font-size: 10px;
+    color: #a0a0a0;
+    padding-top:20px;
+}
 /*Botão Voltar topo*/
 #voltar-topo{
     position: fixed;
@@ -81,18 +343,20 @@ footer p{
 #section-login{
     padding: 5px;
     text-align: center;
-    background-color: #fff;
 }
 
 
 #section-cadastro{
     padding: 5px;
     text-align: center;
-    background-color: #fff;
 }
 
 
 #section-cadastro {
     padding: 50px;
     display: none;
+}
+
+#botao-cadastrar{
+    padding: 5px 5px
 }
